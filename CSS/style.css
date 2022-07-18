@@ -165,33 +165,33 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*-- Footer --*/
 
+.foot {
+  background-color: var(--col-2f303a);
+  padding: 60px 0 60px;
+}
+
 .logo-light {
   color: var(--col-ffffff);
 }
 
-.footer-bg {
-  background-color: var(--col-2f303a);
+.addr-cont {
+  padding-top: 20px;
+  padding-left: 0;
 }
 
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-addr-list {
+.foot-addr-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  padding-top: 20px;
+}
+
+.foot-addr-txt {
+  color: var(--col-ffffff);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-}
-
-.footer-addr-txt {
-  color: var(--col-ffffff);
 }
 
 .footer-link {
@@ -203,62 +203,67 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--col-accent);
 }
 
+
 /*-- Portfolio --*/
-.portfolio-container {
+
+.portf {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.portfolio-list{
+.portf-list{
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-item {
+.portf-item {
   background-color: var(--col-ffffff);
   outline: 1px solid var(--col-eeeeee);
 }
 
-.portfolio-subitem {
+.portf-subitem {
   padding: 20px 24px;
 }
 
-.project-name {
+.portf-subitem-head {
   font-size: 18px;
   font-weight: 700;
   line-height: calc(36 /18);
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--col-212121);
 }
 
-.project-description {
+.portf-subitem-txt {
   font-size: 16px;
   font-weight: 400;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
+  color: var(--col-757575);
 }
 
-.portfolio-link:visited {
+.portf-link:visited {
   color: var(--col-212121);
 }
 
-/*-- Advertising board --*/
 
-.adv-board {
+/*-- Main message --*/
+
+.main-mes {
   background-color: var(--col-2f303a);
+  padding: 200px 0 200px;
 }
 
-.adv-container {
+.main-mes-cont {
   display: flex;
-  min-height: 600px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
 
-.adv-txt {
+.main-mes-txt {
   font-size: 44px;
   font-weight: 900;
   line-height: calc(60 / 44);
@@ -268,7 +273,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--col-ffffff);
 }
 
-.adv-btn {
+.main-mes-btn {
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -288,13 +293,20 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*-- Features --*/
 
-.feature-list {
-  display: flex;
-  gap: 30px;
-  padding-top: 94px;
+.feat {
+  padding: 94px 0 94px;
 }
 
-.feature-header {
+.feat-list {
+  display: flex;
+  gap: 30px;
+}
+
+.feat-item {
+  min-width: 270px;
+}
+
+.feat-head-txt {
   font-size: 14px;
   font-weight: 700;
   line-height: calc(16 / 14);
@@ -304,7 +316,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 10px;
 }
 
-.feature-txt {
+.feat-txt {
   font-size: 14px;
   font-weight: 400;
   line-height: calc(24 / 14);
@@ -312,44 +324,53 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--col-757575);
 }
 
-/*-- Whatwedo --*/
 
-.hh {
+/*-- What we do --*/
+
+.whwedo {
+  padding: 0 0 94px;
+}
+
+.whwedo-head-txt {
   font-size: 36px;
   font-weight: 700;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--col-212121);
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.whatwedo-list {
+.whwedo-list {
   display: flex;
   gap: 30px;
 }
 
-/*-- Ourteam --*/
 
-.ourteam {
+/*-- Our team --*/
+
+.ourt {
   background-color: var(--col-f5f4fa);
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   text-align: center;
+  padding: 94px 0 94px;
 }
 
-.ourteam-list {
+.ourt-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
-.ourteam-item {
+.ourt-item {
   background-color: var(--col-ffffff);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001F;
 }
 
-.ourteam-subitem {
+.ourt-subitem {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -357,13 +378,13 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 30px;
 }
 
-.ourteam-header {
+.ourt-head-txt {
   font-size: 16px;
   font-weight: 500;
   color: var(--col-212121);
 }
 
-.ourteam-txt {
+.ourt-txt {
   font-size: 16px;
   font-weight: 400;
   color: var(--col-757575);
